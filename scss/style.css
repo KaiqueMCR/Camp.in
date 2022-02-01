@@ -1,0 +1,296 @@
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "main banner";
+}
+
+#logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: main;
+  grid-row: inherit;
+  grid-column: inherit;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: var(--background);
+}
+
+section {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: banner;
+  grid-row: inherit;
+  grid-column: inherit;
+  width: 100%;
+  height: 100vh;
+  background: url(../images/side-image.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.formContainer {
+  width: 75%;
+  background-color: var(--form-background);
+  padding: 2rem 6rem;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  font-family: "poppins", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: var(--text-title);
+}
+
+header .break {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 0;
+}
+
+header p {
+  margin-top: -0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-base);
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+form #emailField,
+form #passwordField {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  font-family: "poppins", sans-serif;
+  color: var(--text-base);
+  position: relative;
+}
+
+form #emailField i,
+form #passwordField i {
+  position: absolute;
+  bottom: 13px;
+  left: 10px;
+}
+
+form fieldset {
+  border: none;
+}
+
+form button {
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ffd465;
+}
+
+.inputs {
+  padding: 0.7rem;
+  background: transparent;
+  border: 1px solid var(--text-base);
+  text-indent: 1.5rem;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  border-radius: 5px;
+  color: var(--text-base);
+}
+
+.inputs::-webkit-input-placeholder {
+  color: var(--text-base);
+}
+
+.inputs:-ms-input-placeholder {
+  color: var(--text-base);
+}
+
+.inputs::-ms-input-placeholder {
+  color: var(--text-base);
+}
+
+.inputs::placeholder {
+  color: var(--text-base);
+}
+
+.inputs:focus-within {
+  border: none;
+  outline: solid #ffdb7f;
+}
+
+#checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  color: var(--text-base);
+}
+
+#checkbox a {
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+#checkbox a:hover {
+  color: #ffdb7f;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  padding-left: 25px;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.check {
+  left: 0;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  position: absolute;
+  border: solid 1px var(--text-base);
+  border-radius: 5px;
+}
+
+.container input:checked ~ .check {
+  background: var(--primary-color);
+  border: none;
+}
+
+.container .check::after {
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--form-background);
+  border-radius: 1px;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.check::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .check::after {
+  display: block;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+footer a {
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+footer a:hover {
+  color: #ffdb7f;
+}
+
+@media screen and (max-width: 1350px) {
+  .formContainer {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  main {
+    width: 100vw;
+    height: 100vh;
+  }
+  section {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

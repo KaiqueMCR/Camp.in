@@ -1,0 +1,51 @@
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "main banner";
+}
+
+#logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+main {
+  grid-area: main;
+  grid-row: inherit;
+  grid-column: inherit;
+
+  display: grid;
+  place-items: center;
+  background-color: var(--background);
+}
+
+section {
+  grid-area: banner;
+  grid-row: inherit;
+  grid-column: inherit;
+
+  width: 100%;
+  height: 100vh;
+
+  background: url(../images/side-image.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+@import 'form';
+
+@import "responsive";

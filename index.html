@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Amigos e uma fogueira são as melhores coisas que podem haver num acampamento. Sejam bem vindos à nossa natureza selvagem. O Camp.in está à postos para te ajudar nesses momentos maravilhosos"
+    />
+
+    <link rel="stylesheet" href="scss/style.css" />
+
+    <link rel="icon" href="images/favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Camp.in - Login</title>
+  </head>
+
+  <body>
+    <img id="logo" src="./images/logo.svg" alt="camp.in Logo" />
+
+    <main>
+      <div class="formContainer">
+        <header>
+          <img id="login" src="./images/log-in.svg" alt="login ícone" />
+          <h1>Faça seu login</h1>
+          <div class="break"></div>
+          <p>Entre com suas informações de cadastro.</p>
+        </header>
+
+        <form action="">
+          <fieldset id="emailField">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu e-mail"
+              class="inputs"
+            />
+            <i id="mail" class="fas fa-envelope"></i>
+          </fieldset>
+
+          <fieldset id="passwordField">
+            <label for="password">Senha</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Digite sua senha"
+              class="inputs"
+            />
+            <i id="lock" class="fas fa-lock"></i>
+          </fieldset>
+
+          <fieldset id="checkbox">
+            <div>
+              <label class="container" for="rememberme"
+                >Lembre-me
+                <input
+                  type="checkbox"
+                  name="rememberme"
+                  id="rememberme"
+                  class="checkmark"
+                />
+                <span class="check"></span>
+              </label>
+            </div>
+            <a href="#">Esqueci minha senha</a>
+          </fieldset>
+
+          <button type="submit">Entrar</button>
+        </form>
+
+        <footer>
+          <p>Não tem uma conta?</p>
+          <a href="#">Registre-se</a>
+        </footer>
+      </div>
+    </main>
+    <section id="banner"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
