@@ -118,12 +118,32 @@ form {
   position: relative;
   cursor: pointer;
   padding-left: 25px;
-}
 
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  input:checked ~ .check {
+    background: var(--primary-color);
+    border: none;
+  }
+
+  .check::after {
+    top: 2px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--form-background);
+    border-radius: 1px;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+  input:checked ~ .check::after {
+    display: block;
+  }
 }
 
 .check {
@@ -135,32 +155,12 @@ form {
   position: absolute;
   border: solid 1px var(--text-base);
   border-radius: 5px;
-}
 
-.container input:checked ~ .check {
-  background: var(--primary-color);
-  border: none;
-}
-
-.container .check::after {
-  top: 2px;
-  left: 6px;
-  width: 5px;
-  height: 10px;
-  border: solid var(--form-background);
-  border-radius: 1px;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-}
-
-.check::after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.container input:checked ~ .check::after {
-  display: block;
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
 }
 
 footer {

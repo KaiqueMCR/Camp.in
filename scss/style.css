@@ -213,17 +213,6 @@ form button:hover {
   cursor: pointer;
 }
 
-.check {
-  left: 0;
-  top: 3px;
-  width: 20px;
-  height: 20px;
-  background: transparent;
-  position: absolute;
-  border: solid 1px var(--text-base);
-  border-radius: 5px;
-}
-
 .container input:checked ~ .check {
   background: var(--primary-color);
   border: none;
@@ -241,14 +230,25 @@ form button:hover {
           transform: rotate(45deg);
 }
 
+.container input:checked ~ .check::after {
+  display: block;
+}
+
+.check {
+  left: 0;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  position: absolute;
+  border: solid 1px var(--text-base);
+  border-radius: 5px;
+}
+
 .check::after {
   content: "";
   position: absolute;
   display: none;
-}
-
-.container input:checked ~ .check::after {
-  display: block;
 }
 
 footer {
@@ -291,6 +291,22 @@ footer a:hover {
   }
   section {
     display: none;
+  }
+  .formContainer {
+    width: 60%;
+    background: var(--background);
+  }
+  fieldset#checkbox {
+    font-size: 0.9rem;
+  }
+  span.check {
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .formContainer {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

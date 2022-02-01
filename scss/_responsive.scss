@@ -13,4 +13,23 @@
   section {
     display: none;
   }
+
+  .formContainer {
+    width: 60%;
+    background: var(--background);
+  }
+
+  fieldset#checkbox {
+    font-size: 0.9rem;
+  }
+
+  span.check {
+    top: 0px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .formContainer {
+    width: 100%;
+  }
 }
