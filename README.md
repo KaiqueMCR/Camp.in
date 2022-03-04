@@ -6,7 +6,7 @@ Rocketseat is a brazilian educational institution of technology, so the page lan
 # Screenshot
 
 <h3 align=center>
-  <img src="images/screenshot.jpg">
+  <img src="./assets/images/screenshot.jpg">
 <h3>
 
 # the biggest challenge
