@@ -1,5 +1,16 @@
 # Camp.in Rocketseat
 
+<div align="center">
+
+![GitHub top language](https://img.shields.io/github/languages/top/KaiqueMCR/Campin?color=%20%23c69%20)
+![GitHub](https://img.shields.io/github/license/KaiqueMCR/Campin)
+![GitHub repo size](https://img.shields.io/github/repo-size/KaiqueMCR/Campin)
+![GitHub issues](https://img.shields.io/github/issues/KaiqueMCR/Campin)
+![GitHub forks](https://img.shields.io/github/forks/KaiqueMCR/Campin)
+![GitHub stars](https://img.shields.io/github/stars/KaiqueMCR/Campin)
+
+</div>
+
 This repository is a challenge offered by Rocketseat to boost coding front-end abilities, and help beginners to reach the next level.
 Rocketseat is a brazilian educational institution of technology, so the page language is pt-br.
 
