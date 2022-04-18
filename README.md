@@ -20,7 +20,7 @@ Rocketseat is a brazilian educational institution of technology, so the page lan
 
 <p align="center">Click on the image above to see in production 👆</p>
   
-# the biggest challenge
+# The biggest challenge
 
 The biggest challenge for me was styling a custom checkbox design, this took me a few minutes of research and tutorials to do this correctly.
 
