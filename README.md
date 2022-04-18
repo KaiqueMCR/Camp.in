@@ -11,15 +11,15 @@
 
 </div>
 
-This repository is a challenge offered by Rocketseat to boost coding front-end abilities, and help beginners to reach the next level.
+🚀 This repository is a challenge offered by Rocketseat to boost coding front-end abilities, and help beginners to reach the next level.
 Rocketseat is a brazilian educational institution of technology, so the page language is pt-br.
 
 # Screenshot
+  
+[<img src="./assets/images/screenshot.jpg" />](https://kaiquemcr.github.io/Campin/)
 
-<h3 align=center>
-  <img src="./assets/images/screenshot.jpg">
-<h3>
-
+<p align="center">Click on the image above to see in production 👆</p>
+  
 # the biggest challenge
 
 The biggest challenge for me was styling a custom checkbox design, this took me a few minutes of research and tutorials to do this correctly.
@@ -76,7 +76,7 @@ The biggest challenge for me was styling a custom checkbox design, this took me 
 }
 ```
 
-# Stack used
+# 👾 Technologies
 
 - HTML
 - CSS (Sass)
