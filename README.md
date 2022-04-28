@@ -14,7 +14,7 @@
 🚀 This repository is a challenge offered by Rocketseat to boost coding front-end abilities, and help beginners to reach the next level.
 Rocketseat is a brazilian educational institution of technology, so the page language is pt-br.
 
-# Screenshot
+## Screenshot
   
 [<img src="./assets/images/screenshot.jpg" />](https://kaiquemcr.github.io/Campin/)
 
@@ -76,12 +76,12 @@ The biggest challenge for me was styling a custom checkbox design, this took me 
 }
 ```
 
-# 👾 Technologies
+## 👾 Technologies
 
 - HTML
 - CSS (Sass)
 - Javascript
 
-# License
+## License
 
 [MIT]("https://choosealicense.com/licenses/mit/")
